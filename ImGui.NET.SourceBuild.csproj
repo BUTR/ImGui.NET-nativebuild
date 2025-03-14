@@ -72,6 +72,11 @@
       <PackagePath>src/imgui/</PackagePath>
       <Pack>true</Pack>
     </Content>
+    <Content Include="$(MSBuildThisFileDirectory)imgui_markdown/imgui_markdown.h">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <PackagePath>src/imgui/</PackagePath>
+      <Pack>true</Pack>
+    </Content>
     <Content Include="ImGui.NET.SourceBuild.props">
       <Pack>true</Pack>
       <PackagePath>build</PackagePath>

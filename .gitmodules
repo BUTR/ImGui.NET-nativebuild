@@ -2,3 +2,7 @@
 	path = cimgui
 	url = https://github.com/cimgui/cimgui
 	branch = docking_inter
+[submodule "imgui_markdown"]
+	path = imgui_markdown
+	url = https://github.com/enkisoftware/imgui_markdown
+	branch = dev

@@ -30,6 +30,8 @@ while :; do
     shift
 done
 
+cp "$scriptPath/imgui_markdown/imgui_markdown.h" "$cimguiPath/imgui_markdown.h"
+
 mkdir -p $cimguiPath/build/$_CMakeBuildType
 pushd $cimguiPath/build/$_CMakeBuildType
 cmake ../.. -DCMAKE_OSX_ARCHITECTURES="$_CMakeOsxArchitectures" -DCMAKE_OSX_DEPLOYMENT_TARGET=10.13 -DCMAKE_BUILD_TYPE=$_CMakeBuildType

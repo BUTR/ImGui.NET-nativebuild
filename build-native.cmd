@@ -18,6 +18,8 @@ if /i [%1] == [x86] (set BUILD_ARCH=x86 && set BUILD_CMAKE_GENERATOR_PLATFORM=Wi
 shift
 goto ArgLoop
 
+copy "%~dp0imgui_markdown\imgui_markdown.h" "%~dp0cimgui\imgui_markdown.h"
+
 :Build
 pushd %CIMGUI_ROOT%
 
