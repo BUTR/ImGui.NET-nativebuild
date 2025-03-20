@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 scriptPath="`dirname \"$0\"`"
-cimguiPath=$scriptPath/cimgui
+cimguiPath=$scriptPath/cimgui-custom
 
 _CMakeBuildType=Debug
 _CMakeOsxArchitectures=

@@ -1,7 +1,7 @@
 @setlocal
 @echo off
 
-set CIMGUI_ROOT=%~dp0cimgui
+set CIMGUI_ROOT=%~dp0cimgui-custom
 set BUILD_CONFIG=Debug
 set BUILD_ARCH=x64
 set BUILD_CMAKE_GENERATOR_PLATFORM=x64
