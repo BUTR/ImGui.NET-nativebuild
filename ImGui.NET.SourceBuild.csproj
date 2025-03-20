@@ -42,7 +42,7 @@
       <PackagePath>src/imgui/</PackagePath>
       <Pack>true</Pack>
     </Content>
-    <Content Include="$(MSBuildThisFileDirectory)cimgui-custom/imgui_markdown.cpp">
+    <Content Include="$(MSBuildThisFileDirectory)cimgui-custom/cimmarkdown.cpp">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <PackagePath>src/imgui_markdown/</PackagePath>
       <Pack>true</Pack>
@@ -75,6 +75,11 @@
     <Content Include="$(MSBuildThisFileDirectory)cimgui-custom/imgui/imstb_truetype.h">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <PackagePath>src/imgui/</PackagePath>
+      <Pack>true</Pack>
+    </Content>
+    <Content Include="$(MSBuildThisFileDirectory)cimgui-custom/cimmarkdown.h">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <PackagePath>src/imgui_markdown/</PackagePath>
       <Pack>true</Pack>
     </Content>
     <Content Include="$(MSBuildThisFileDirectory)cimgui-custom/imgui_markdown/imgui_markdown.h">
