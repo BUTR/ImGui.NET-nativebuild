@@ -82,7 +82,7 @@
       <PackagePath>src/imgui_markdown/</PackagePath>
       <Pack>true</Pack>
     </Content>
-    <Content Include="$(MSBuildThisFileDirectory)cimgui-custom/imgui_markdown/imgui_markdown.h">
+    <Content Include="$(MSBuildThisFileDirectory)cimgui-custom/imgui_markdown.h">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <PackagePath>src/imgui_markdown/</PackagePath>
       <Pack>true</Pack>
