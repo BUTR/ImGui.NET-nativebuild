@@ -44,7 +44,7 @@
     </Content>
     <Content Include="$(MSBuildThisFileDirectory)cimgui-custom/cimmarkdown.cpp">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <PackagePath>src/imgui_markdown/</PackagePath>
+      <PackagePath>src/</PackagePath>
       <Pack>true</Pack>
     </Content>
     <Content Include="$(MSBuildThisFileDirectory)cimgui-custom/imgui/imconfig.h">
@@ -79,7 +79,7 @@
     </Content>
     <Content Include="$(MSBuildThisFileDirectory)cimgui-custom/cimmarkdown.h">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <PackagePath>src/imgui_markdown/</PackagePath>
+      <PackagePath>src/</PackagePath>
       <Pack>true</Pack>
     </Content>
     <Content Include="$(MSBuildThisFileDirectory)cimgui-custom/imgui_markdown.h">
