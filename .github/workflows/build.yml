@@ -25,8 +25,14 @@ jobs:
     strategy:
       matrix:
         include:
+          - os: macos-13
+            architecture: x64
           - os: macos-latest
+            architecture: ARM64
           - os: ubuntu-latest
+            architecture: x64
+          - os: ubuntu-latest
+            architecture: ARM64
           - os: windows-latest
             architecture: x64
           - os: windows-latest
@@ -88,11 +94,11 @@ jobs:
           name: win-${{ matrix.architecture }}
           path: cimgui-custom\build\${{ matrix.architecture }}\${{ github.event.inputs.ReleaseType || 'Release' }}\*
 
-      - name: Upload ${{ matrix.os }} ${{ github.event.inputs.ReleaseType || 'Release' }}
+      - name: Upload ${{ matrix.os }}-${{ matrix.architecture }} ${{ github.event.inputs.ReleaseType || 'Release' }}
         uses: actions/upload-artifact@v4
-        if: matrix.os == 'ubuntu-latest' || matrix.os == 'macos-latest'
+        if: matrix.os == 'ubuntu-latest' || matrix.os == 'macos-latest' || matrix.os == 'macos-13'
         with:
-          name: ${{ matrix.os }}-x64
+          name: ${{ matrix.os }}-${{ matrix.architecture }}
           path: cimgui-custom/build/${{ github.event.inputs.ReleaseType || 'Release' }}/*
 
       - name: Upload Json Files
