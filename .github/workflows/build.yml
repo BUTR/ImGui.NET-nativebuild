@@ -77,8 +77,10 @@ jobs:
 
       - name: Build ${{ github.event.inputs.ReleaseType || 'Release' }}
         run:  |
-              if [[ "$RUNNER_OS" == "Windows" || "$RUNNER_OS" == "Linux" ]]; then
+              if [[ "$RUNNER_OS" == "Windows" ]]; then
                 ./ci-build.cmd ${{ github.event.inputs.ReleaseType || 'Release' }} ${{ matrix.architecture }}
+              elif [[ "$RUNNER_OS" == "Linux" ]]; then
+                ./ci-build.sh ${{ github.event.inputs.ReleaseType || 'Release' }} ${{ matrix.architecture }}
               else
                 ./ci-build.sh ${{ github.event.inputs.ReleaseType || 'Release' }}
               fi
