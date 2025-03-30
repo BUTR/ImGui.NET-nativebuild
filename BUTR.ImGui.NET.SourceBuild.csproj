@@ -87,7 +87,7 @@
       <PackagePath>src/imgui_markdown/</PackagePath>
       <Pack>true</Pack>
     </Content>
-    <Content Include="ImGui.NET.SourceBuild.props">
+    <Content Include="BUTR.ImGui.NET.SourceBuild.props">
       <Pack>true</Pack>
       <PackagePath>build</PackagePath>
     </Content>
