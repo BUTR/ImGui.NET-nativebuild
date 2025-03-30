@@ -33,9 +33,9 @@ jobs:
           - os: windows-latest
             architecture: x86
           - os: windows-latest
-            architecture: ARM64
+            architecture: arm64
           - os: windows-latest
-            architecture: ARM
+            architecture: arm
 
     steps:
       - uses: actions/checkout@v4
@@ -93,21 +93,21 @@ jobs:
         uses: actions/upload-artifact@v4
         if: matrix.os == 'ubuntu-latest'
         with:
-          name: ${{ matrix.os }}-x64
+          name: linux-x64
           path: cimgui-custom/build/${{ github.event.inputs.ReleaseType || 'Release' }}/*
 
       - name: Upload ${{ matrix.os }}-${{ matrix.architecture }} ${{ github.event.inputs.ReleaseType || 'Release' }}
         uses: actions/upload-artifact@v4
         if: matrix.os == 'ubuntu-24.04-arm'
         with:
-          name: ${{ matrix.os }}-ARM64
+          name: linux-arm64
           path: cimgui-custom/build/${{ github.event.inputs.ReleaseType || 'Release' }}/*
 
       - name: Upload ${{ matrix.os }} ${{ github.event.inputs.ReleaseType || 'Release' }}
         uses: actions/upload-artifact@v4
         if: matrix.os == 'macos-latest'
         with:
-          name: ${{ matrix.os }}-x64-ARM64
+          name: osx
           path: cimgui-custom/build/${{ github.event.inputs.ReleaseType || 'Release' }}/*
 
       - name: Upload Json Files
