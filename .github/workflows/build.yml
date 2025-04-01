@@ -137,7 +137,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: native
-          path: bin\Packages\Release\*.nupkg
+          path: bin/Packages/Release/*.nupkg
 
   CreateReleaseOnTagCreate:
     runs-on: ubuntu-latest
