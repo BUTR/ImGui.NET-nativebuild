@@ -117,6 +117,23 @@ jobs:
           name: JsonFiles
           path: cimgui-custom\generator\output\*.json
 
+  CreateNativePackage:
+    runs-on: ubuntu-latest
+    needs: [Build]
+    steps:
+      - name: Download Artifacts
+        uses: actions/download-artifact@v4
+
+      - name: Build package
+        run: dotnet pack -c Release BUTR.ImGui.NET.Native.csproj
+        shell: bash
+
+      - name: Upload package
+        uses: actions/upload-artifact@v4
+        with:
+          name: native
+          path: bin\Packages\Release\*.nupkg
+
   CreateReleaseOnTagCreate:
     runs-on: ubuntu-latest
     needs: [Build]
