@@ -8,9 +8,9 @@
   </PropertyGroup>
 
   <PropertyGroup>
-    <Copyright>Copyright 2022 (c) Eric Mellino. All rights reserved.</Copyright>
-    <Authors>Eric Mellino</Authors>
-    <RepositoryUrl>https://github.com/mellinoe/ImGui.NET-nativebuild</RepositoryUrl>
+    <Copyright>Copyright 2022-2025 (c) BUTR Team, Eric Mellino. All rights reserved.</Copyright>
+    <Authors>BUTR Team, Eric Mellino</Authors>
+    <RepositoryUrl>https://github.com/BUTR/ImGui.NET-nativebuild</RepositoryUrl>
   </PropertyGroup>
 
   <PropertyGroup>

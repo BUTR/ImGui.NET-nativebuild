@@ -94,7 +94,7 @@
   </ItemGroup>
 
   <PropertyGroup>
-    <Description>Bundles the source code for dear imgui and its C binding layer (cimgui) for use within projects targeting webassembly.</Description>
+    <Description>Bundles the source code for dear imgui and its C binding layer (cimgui) for use within projects targeting webassembly. Includes imgui_markdown.</Description>
     <PackageTags>wasm webassembly emscripten imgui gui graphics imgui.net</PackageTags>
   </PropertyGroup>
 

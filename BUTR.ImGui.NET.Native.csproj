@@ -40,7 +40,7 @@
   </ItemGroup>
 
   <PropertyGroup>
-    <Description>Bundles the native libraries for dear imgui (cimgui) for use within projects.</Description>
+    <Description>Bundles the native libraries for dear imgui (cimgui) for use within projects. Includes imgui_markdown.</Description>
     <PackageTags>imgui gui graphics imgui.net</PackageTags>
   </PropertyGroup>
 
