@@ -27,11 +27,6 @@
       <PackagePath>runtimes/osx/native/libcimgui.dylib</PackagePath>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-   <None Include="linux-x86/cimgui.so">
-      <Pack>true</Pack>
-      <PackagePath>runtimes/linux-x86/native/libcimgui.so</PackagePath>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
    <None Include="linux-x64/cimgui.so">
       <Pack>true</Pack>
       <PackagePath>runtimes/linux-x64/native/libcimgui.so</PackagePath>
