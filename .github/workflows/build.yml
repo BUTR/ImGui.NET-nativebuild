@@ -131,11 +131,9 @@ jobs:
 
       - uses: lmangani/polyfill-glibc-action@main
         with:
-          glibc: "2.28"
           target: "linux-x64/cimgui.so"
       - uses: lmangani/polyfill-glibc-action@main
         with:
-          glibc: "2.28"
           target: "linux-arm64/cimgui.so"
 
       - name: Build package
