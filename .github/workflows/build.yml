@@ -91,14 +91,14 @@ jobs:
 
       - name: Upload ${{ matrix.os }}-${{ matrix.architecture }} ${{ github.event.inputs.ReleaseType || 'Release' }}
         uses: actions/upload-artifact@v4
-        if: matrix.os == 'ubuntu-latest'
+        if: matrix.os == 'ubuntu-22.04'
         with:
           name: linux-x64
           path: cimgui-custom/build/${{ github.event.inputs.ReleaseType || 'Release' }}/*
 
       - name: Upload ${{ matrix.os }}-${{ matrix.architecture }} ${{ github.event.inputs.ReleaseType || 'Release' }}
         uses: actions/upload-artifact@v4
-        if: matrix.os == 'ubuntu-24.04-arm'
+        if: matrix.os == 'ubuntu-22.04-arm'
         with:
           name: linux-arm64
           path: cimgui-custom/build/${{ github.event.inputs.ReleaseType || 'Release' }}/*
